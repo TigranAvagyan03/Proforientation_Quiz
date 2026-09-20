@@ -1,0 +1,41 @@
+﻿@page
+@model Proforientation_Quiz.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Вход";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="text-center mb-4">
+                <h1 class="display-4 fw-bold text-primary">ПРОФОРИЕНТАЦИЯ</h1>
+                <p class="lead text-muted">// войдите, чтобы продолжить</p>
+            </div>
+            <div class="card shadow-lg">
+                <div class="window-titlebar">
+                    <span class="dot"></span>
+                    <span class="title-text">auth / login</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="mb-4">Вход</h2>
+                    <form method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" placeholder="name@example.com" />
+                            <label asp-for="Input.Email">Email</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" placeholder="password" />
+                            <label asp-for="Input.Password">Пароль</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="w-100 btn btn-primary btn-lg mb-3">Войти</button>
+                        <div class="text-center">
+                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Нет аккаунта? Зарегистрироваться</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

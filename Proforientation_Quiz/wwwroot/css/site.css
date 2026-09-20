@@ -1,0 +1,200 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+:root {
+    --bg-page: #0a0e1a;
+    --panel-bg: #12182a;
+    --panel-border: #2a3550;
+    --input-bg: #0e1424;
+    --text-primary: #d8e0f0;
+    --text-dim: #5f7098;
+    --accent: #e8a33d;
+    --accent-dim: #a3762a;
+    --danger: #e0654f;
+}
+
+body {
+    background-color: var(--bg-page) !important;
+    color: var(--text-primary);
+    font-family: 'Courier New', Consolas, monospace;
+    background-image: repeating-linear-gradient( 0deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px );
+}
+
+header nav.navbar {
+    background-color: var(--bg-page) !important;
+    border-bottom: 1px solid var(--panel-border) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-primary) !important;
+    letter-spacing: 1px;
+}
+
+    .nav-link:hover {
+        color: var(--accent) !important;
+    }
+
+.display-4.text-primary, h1.text-primary {
+    color: var(--text-primary) !important;
+    letter-spacing: 2px;
+    font-size: 2rem !important;
+}
+
+.lead, .text-muted {
+    color: var(--text-dim) !important;
+    letter-spacing: 1px;
+    font-size: 0.85rem !important;
+}
+
+.card {
+    background-color: var(--panel-bg) !important;
+    border: 1px solid var(--panel-border) !important;
+    border-radius: 0 !important;
+    box-shadow: 0 0 0 1px rgba(232,163,61,0.08), 0 20px 50px rgba(0,0,0,0.5) !important;
+    padding: 0 !important;
+}
+
+.card-body {
+    padding: 1.75rem !important;
+}
+
+    .card-body h2, .card-body h1, .card-body h3 {
+        color: var(--text-primary) !important;
+        font-size: 1.1rem !important;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+.window-titlebar {
+    background-color: var(--input-bg);
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--panel-border);
+}
+
+    .window-titlebar .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: var(--accent);
+        box-shadow: 0 0 6px var(--accent);
+    }
+
+    .window-titlebar .title-text {
+        font-size: 11px;
+        color: var(--text-dim);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    .window-titlebar .logout-link {
+        margin-left: auto;
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: var(--accent) !important;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+        .window-titlebar .logout-link:hover {
+            color: #fff !important;
+        }
+
+.form-floating > label, label {
+    color: var(--text-dim) !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form-control {
+    background-color: var(--input-bg) !important;
+    border: 1px solid var(--panel-border) !important;
+    border-radius: 0 !important;
+    color: var(--text-primary) !important;
+    font-family: 'Courier New', Consolas, monospace;
+}
+
+    .form-control:focus {
+        background-color: var(--input-bg) !important;
+        border-color: var(--accent) !important;
+        color: var(--text-primary) !important;
+        box-shadow: 0 0 0 1px var(--accent) !important;
+    }
+
+.btn-primary {
+    background-color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    border-radius: 0 !important;
+    color: #0a0e1a !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.85rem !important;
+}
+
+    .btn-primary:hover {
+        background-color: #f0b355 !important;
+        border-color: #f0b355 !important;
+    }
+
+.btn-outline-primary {
+    color: var(--text-primary) !important;
+    border: 1px solid var(--panel-border) !important;
+    border-radius: 0 !important;
+    background-color: var(--input-bg) !important;
+    font-family: 'Courier New', Consolas, monospace;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+    .btn-outline-primary:hover {
+        border-color: var(--accent) !important;
+        color: var(--accent) !important;
+        background-color: var(--input-bg) !important;
+    }
+
+a {
+    color: var(--accent) !important;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+    a:hover {
+        color: #fff !important;
+        text-decoration: underline;
+    }
+
+.text-danger {
+    color: var(--danger) !important;
+    font-size: 0.8rem !important;
+}
+
+footer.footer {
+    background-color: var(--bg-page) !important;
+    border-top: 1px solid var(--panel-border) !important;
+    color: var(--text-dim) !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,37 @@
+﻿@page
+@model Proforientation_Quiz.Pages.QuizModel
+@{
+    ViewData["Title"] = "Тест";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            @if (Model.CurrentQuestion != null)
+            {
+                <div class="card shadow-lg">
+                    <div class="window-titlebar">
+                        <span class="dot"></span>
+                        <span class="title-text">quiz / in progress</span>
+                        <form asp-page="/Account/Logout" method="post" style="margin-left:auto;">
+                            <button type="submit" class="logout-link">Выйти</button>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="mb-4">@Model.CurrentQuestion.Text</h3>
+                        @foreach (var option in Model.CurrentQuestion.Options)
+                        {
+                            <form method="post" class="mb-2">
+                                <input type="hidden" name="questionId" value="@Model.CurrentQuestion.Id" />
+                                <input type="hidden" name="answerId" value="@option.Id" />
+                                <input type="hidden" name="attemptId" value="@Model.AttemptId" />
+                                <button type="submit" class="btn btn-outline-primary w-100 p-3">
+                                    &gt; @option.Text
+                                </button>
+                            </form>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
