@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Proforientation_Quiz.Models;
+using Proforientation_Quiz.Domain.Models;
+using Proforientation_Quiz.Infrastructure.Identity;
 
-namespace Proforientation_Quiz.Pages.Account
+namespace Proforientation_Quiz.Web.Pages.Account
 {
     public class LogoutModel : PageModel
     {

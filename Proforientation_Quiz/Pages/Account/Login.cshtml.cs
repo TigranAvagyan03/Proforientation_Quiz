@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Proforientation_Quiz.Models;
-using Proforientation_Quiz.Pages.Account.InputModels;
+using Proforientation_Quiz.Domain.Models;
+using Proforientation_Quiz.Infrastructure.Identity;
+using Proforientation_Quiz.Web.Pages.Account.InputModels;
 using System.Runtime.CompilerServices;
 
-namespace Proforientation_Quiz.Pages.Account
+namespace Proforientation_Quiz.Web.Pages.Account
 {
     public class LoginModel : PageModel
     {

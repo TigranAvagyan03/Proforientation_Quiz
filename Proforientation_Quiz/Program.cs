@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Proforientation_Quiz.Data;
-using Proforientation_Quiz.Data.CareerTest.Data;
-using Proforientation_Quiz.Data.Repositorys;
-using Proforientation_Quiz.Data.Repositorys.Interfaces;
-using Proforientation_Quiz.Models;
-using Proforientation_Quiz.Services;
-using Proforientation_Quiz.Services.Interfaces;
+using Proforientation_Quiz.Infrastructure.Data;
+using Proforientation_Quiz.Infrastructure.Repositories;
+using Proforientation_Quiz.Application.Interfaces;
+using Proforientation_Quiz.Domain.Models;
+using Proforientation_Quiz.Infrastructure.Identity;
+using Proforientation_Quiz.Application.Services;
+using Proforientation_Quiz.Application.Services.Interfaces;
 
-namespace Proforientation_Quiz
+namespace Proforientation_Quiz.Web
 {
     public class Program
     {

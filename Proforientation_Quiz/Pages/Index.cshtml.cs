@@ -2,10 +2,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Proforientation_Quiz.Models;
-using Proforientation_Quiz.Services.Interfaces;
+using Proforientation_Quiz.Domain.Models;
+using Proforientation_Quiz.Infrastructure.Identity;
+using Proforientation_Quiz.Application.Services.Interfaces;
 
-namespace Proforientation_Quiz.Pages
+namespace Proforientation_Quiz.Web.Pages
 {
     [Authorize]
     public class IndexModel : PageModel

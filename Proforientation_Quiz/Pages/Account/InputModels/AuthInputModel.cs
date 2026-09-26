@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Proforientation_Quiz.Pages.Account.InputModels
+namespace Proforientation_Quiz.Web.Pages.Account.InputModels
 {
     public class AuthInputModel
     {

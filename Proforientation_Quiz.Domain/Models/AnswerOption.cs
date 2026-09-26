@@ -1,0 +1,17 @@
+﻿namespace Proforientation_Quiz.Domain.Models
+{
+    public class AnswerOption
+    {
+        public int Id {  get; set; }
+
+        public int QuestionId {  get; set; }
+
+        public string Text { get; set; }=string.Empty;
+
+        public TraitsVector Traits {  get; set; }=new();
+
+        public Question Question { get; set; } = null!;
+
+        public ICollection<UserAnswer> UserAnswers { get; set; } = new List<UserAnswer>();
+    }
+}
